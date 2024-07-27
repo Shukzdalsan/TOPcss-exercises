@@ -1,0 +1,15 @@
+/* - Does each element have a unique class name?
+- Did you use the grouping selector for styles that both elements share?
+- Did you make separate rules for the styles unique to each element? */
+
+.black, .yellow {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+.black{
+    color: white;
+    background-color: black;
+}
+.yellow {
+    background-color: yellow;
+}
