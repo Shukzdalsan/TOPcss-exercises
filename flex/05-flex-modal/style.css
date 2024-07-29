@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
-  background: #aaa;
-  color: #333;
-  /* I'll give you this one for free lol */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .icon {
@@ -33,6 +28,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  margin-right: 16px; /* Space between icon and text */
+}
+
+.header-text {
+  font-size: 18px;
+  font-weight: 700;
+  flex-grow: 1;
 }
 
 .close-button {
@@ -48,6 +51,18 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  margin-left: auto; /* Align to the right */
+  flex-shrink: 0;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 button {
